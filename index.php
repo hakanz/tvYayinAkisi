@@ -2,7 +2,7 @@
 	date_default_timezone_set('Europe/Istanbul');
 	
 	$yayinlar = yayinAkisi($_GET["kanal"]);
-	print_r(json_encode($yayinlar["yayinAkisi"]));
+	print_r(json_encode($yayinlar));
 	
 	function yayinAkisi($kanal){
 		$linkBase = "https://www.hurriyet.com.tr/tv-rehberi/yayin-akisi/";
@@ -69,7 +69,7 @@
 						}
 						$ind++;
 					}
-					return array("yayinAkisi"=>$yayinAkisi);
+					return $yayinAkisi;
 				}else{
 					return false; //veri okunamadı.
 				}
