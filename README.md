@@ -9,7 +9,7 @@ Yayın akışını alabilmek için kaynak olarak Hürriyet'in web sitesini kulla
  </code>
  <p></p>
  <code language="php">
-	print_r(json_encode($yayinlar["yayinAkisi"]));
+	print_r(json_encode($yayinlar));
 </code>
 <br><p>Çıktısı şu şekilde:</p>
 <img src="tvyayinakisi.png"/>
